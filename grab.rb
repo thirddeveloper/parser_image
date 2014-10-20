@@ -3,6 +3,7 @@ require 'nokogiri'
  
 unless ARGV.length == 2
     puts "Инструкция: {имя_скрипта, url-адрес_сайта целевая_папка}"
+    puts "Error"
 else
     url=ARGV[0]
     path=ARGV[1]
