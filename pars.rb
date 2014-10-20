@@ -37,7 +37,7 @@ if ARGV.size == params.size
 	threads = []
 	resp = []
 	for a in 0..doc_body.length - 2
-		#p a.to_s + ". " + doc_body[a]['src']
+		p a.to_s + ". " + doc_body[a]['src']
 		if doc_body[a]['src'] != ""
 			#p 1
 			threads << Thread.new(doc_body[a]['src']) do |url|
